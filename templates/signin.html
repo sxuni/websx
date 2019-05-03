@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="/static/css/index.min.23a5b1ca.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+
+                <ul class="nav pull-right">
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/signup" target="">注册</a></li>
+                    <li><a href="/signin">登录</a></li>
+                </ul>
+                <a class="btn btn-navbar" id="responsive-sidebar-trigger">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="sidebar">
+            <div class="panel">
+                <div class="header">
+                    <span class="col_fade">关于</span>
+                </div>
+
+                <div class="inner">
+                    <p>elpsx的论坛</p>
+                    <p>在这里你可以：</p>
+                      <ul>
+                        <li>发表你的看法</li>
+                        <li>提出你的问题</li>
+                        <li>分享你的知识</li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="panel">
+                <div class="header">
+                    <ul class="breadcrumb">
+                        <li><a href="/">主页</a><span class="divider">/</span></li>
+                        <li class="active">登录</li>
+                    </ul>
+                </div>
+
+                <div class="inner">
+                    <form id="signin_form" class="form-horizontal" action="{{ url_for('.login') }}" method="post">
+                        <div class="control-group">
+                            <label class="control-label" for="name">用户名</label>
+
+                            <div class="controls">
+                                <input class="input-xlarge" name="username" size="30" type="text">
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="pass">密码</label>
+                            <div class="controls">
+                                <input class="input-xlarge" name="password" size="30" type="password">
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <input type="submit" class="span-primary" value="登录">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

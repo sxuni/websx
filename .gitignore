@@ -1,0 +1,10 @@
+.idea
+sx.log.txt
+*.pyc
+secret.py
+database_secret.conf
+.vagrant
+reset.py
+config.py
+ubuntu-bionic-18.04-cloudimg-console.log
+deploy.sh

@@ -74,6 +74,12 @@ def login():
         return redirect(url_for('topic.index'))
 
 
+@main.route("/logout")
+def logout():
+    session.pop('user_id', None)
+    return redirect(url_for('.index'))
+
+
 def created_topic(user_id):
     k = 'created_topic_{}'.format(user_id)
     if cache.exists(k):
